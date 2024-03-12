@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    
+
+    <div class="form-container">
+        <form action="home.html" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="1" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="genero">Género:</label>
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="hombre" name="genero" value="hombre" required>
+                <label for="mujer">Mujer</label>
+                <input type="radio" id="mujer" name="genero" value="mujer" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="3" cols="30" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
